@@ -14,7 +14,7 @@ class Conexao{
 		try{
 			if (!isset($connection)) {
 				$connection = new PDO($pdoConfig, DB_USER, DB_PASSWORD);
-				//$connection = new PDO("sqlsrv:Server=servbd;Database=CORPORE", "sa", "se4rf");
+				//$connection = new PDO("sqlsrv:Server=servbd;Database=CORPORE", "teste", "1234");
 				$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			}
 			return $connection;
